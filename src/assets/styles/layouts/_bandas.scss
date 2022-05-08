@@ -1,0 +1,44 @@
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.bands{
+  width: 28%;
+  margin: 10px;
+}
+
+.bands h3,
+h4 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.bands img{
+  width: 100%;
+}
+
+.bands h3{
+  padding: 1rem 0 0 0;
+  margin: 0.1rem;
+}
+
+.bands p {
+  text-align: justify;
+}
+
+@media screen and (max-width: $mid-width-mob) {
+  .bands {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: $max-width-mob) {
+  .bands {
+    width: 90%;
+  }
+}

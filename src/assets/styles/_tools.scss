@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    padding-top: 1.2rem;
+    grid-template-rows: 20px 40px 90px auto;
+    grid-template-areas:  'a a a a'
+                          'b b c c'
+                          'b b d d'
+                          'f f f f';
+  }
+  
+  .grid > div{
+    box-shadow: 0 2px 5px #000000;
+    background-color: $primary-color;
+    border-radius: 1rem;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+    
+  .grid-area{
+    grid-area: f;
+    background-color: $body-color;
+  }
+  
+  
+  @supports (display: grid) {
+    @media screen and (max-width: $max-width-mob) {
+      .grid {
+        grid-template-rows: auto 50px auto 200px;
+        grid-template-areas:  'd b a a'
+                              'e b e e'
+                              'c c c c'
+                              'f f f f';
+      }
+    }
+  }

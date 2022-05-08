@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Resurrection Fest</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar component bootstrap 5 -->
+      <nav class="navbar navbar-expand-md navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img class="logo" src="./assets/images/logo.png" alt="Logo"></a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="bandas.html">Bandas</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          </ul>
+        </div>
+       </div>
+      </nav>
+    </header>
+
+    <!-- retícula maquetada amb flex y media queries -->
+    <main class="container">
+      <h1>Bandas</h1>
+      <div class="flex-container">
+        <div class="bands">
+          <img src="assets/images/1.png" alt="My Chemical Romance"> 
+            <h3>My Chemical Romance</h3>
+            <h4>Alternativo/Indie</h4>
+            <p>My Chemical Romance es una banda estadounidense de rock, formada en el año 2001 en el estado de Nueva Jersey,
+              e integrada en la mayor parte de su historia por el vocalista Gerard Way, el bajista Mikey Way y los guitarristas 
+              Ray Toro y Frank Iero; también Matt Pelissier y Bob Bryar fueron alguna vez los bateristas.
+            </p>
+        </div>
+  
+    
+        <div class="bands">
+          <img src="assets/images/2.png" alt="Bring me the horizon">  
+            <h3>Bring me the horizon</h3>
+            <h4>Alternativo/Metalcore</h4>
+            <p>Bring Me the Horizon es una banda británica de rock proveniente de Sheffield, Inglaterra. Se formó en 2003 
+              y actualmente está conformada por el vocalista Oliver Sykes, el guitarrista Lee Malia, el bajista Matt Kean, 
+              el baterista Matt Nicholls y el tecladista Jordan Fish.
+            </p>
+        </div>
+  
+      
+        <div class="bands">
+          <img src="assets/images/3.png" alt="Papa Roach"> 
+            <h3>Papa Roach</h3>
+            <h4>Rock/Nu metal</h4>
+            <p>Papa Roach es una banda estadounidense de rock y nu metal fundada en 1993 en Vacaville, California. Se dio a conocer 
+              internacionalmente en el año 2000, con su álbum debut, Infest, reconocido tres veces como disco de platino.
+            </p>
+        </div>
+  
+     
+        <div class="bands">
+          <img src="assets/images/4.png" alt="Parkway Drive"> 
+            <h3>Parkway Drive</h3>
+            <h4>Groove metal/Heavy metal</h4>
+            <p>Parkway Drive es una banda australiana de metalcore procedente de Byron Bay, Nueva Gales del Sur, 
+              Australia. Fue formada en 2003. Hasta 2018, Parkway Drive ha lanzado seis álbumes: Killing with a Smile, Horizons, 
+              Deep Blue, Atlas, IRE y Reverence; además de un EP, dos DVD y un libro; Ten Years of Parkway Drive.
+            </p>
+        </div>
+  
+    
+        <div class="bands">
+          <img src="assets/images/5.png" alt="Motionless in White">
+            <h3>Motionless in White</h3>
+            <h4>Heavy metal/Metalcore</h4>
+            <p>Motionless In White es una banda estadounidense de metalcore procedente de Scranton, Pensilvania.
+              Se formó en 2005 y está compuesta por el vocalista/tecladista Chris "Motionless" Cerulli, el guitarrista/vocalista 
+              Ricky "Horror" Olson, el guitarrista líder Ryan Sitkowski, el bajista Justin Morrow y el baterista/tecladista Vinny Mauro.
+            </p>
+        </div>
+  
+  
+        <div class="bands">
+          <img src="assets/images/6.png" alt="A day to remember">
+          <div class="text-center">
+            <h3>A day to remember</h3>
+            <h4>Post-Hardcore/Pop Punk</h4>
+          </div>
+          <p>A Day to Remember es una banda estadounidense de Pop Punk y Metalcore formada en Ocala, 
+            Florida, en 2003. Se caracterizan por la fusión del metalcore con el pop punk. El grupo se encuentra 
+            actualmente formado por Jeremy McKinnon, Neil Westfall, Alex Shelnutt y Kevin Skaff.
+          </p>
+        </div>
+      </div>
+    </main>
+    
+
+    <!-- footer -->
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    
+  </body>
+</html>

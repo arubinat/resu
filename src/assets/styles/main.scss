@@ -1,0 +1,30 @@
+/**
+* Import dependences
+*/
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/scss/bootstrap";
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import layouts
+ */
+
+@import "settings";
+
+@import "tools";
+
+@import "layouts/home";
+
+@import "layouts/bandas";
+
+@import "layouts/nosotros";
+
+@import "layouts/galeria";
+
+

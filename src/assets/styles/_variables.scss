@@ -1,0 +1,24 @@
+@use "sass:color";
+
+/* Colores */
+$primary-color: #ffbb00;
+$secondary-color: #141414;
+$body-color: #ffffff;
+$black: #000000;
+
+/* Fuente */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+  
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/* Medidas */
+$max-width: 1024px;
+
+$mid-width-mob: 768px;
+$max-width-mob: 577px;
+
+
+
+

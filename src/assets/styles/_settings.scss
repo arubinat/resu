@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+@mixin padding {
+  padding: 1rem 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: $body-color;
+}
+
+a{
+  text-decoration: none;
+  color: $body-color;
+}
+
+a:hover {
+  color: $primary-color;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+p {
+  color: $secondary-color;
+  font-size: 1rem;
+}
+
+ul{
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8rem;
+}
+
+
+h1 {
+  @include padding;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  @include padding;
+  font-size: 1.5rem;
+}
+
+h3 {
+  @include padding;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+h4 {
+  padding: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  color: $primary-color;
+}
+
+.container{
+  width: 85vw;
+  max-width: $max-width;
+  margin-top: 0;
+}
+
+.space {
+  border-top: 2px solid rgb(255, 217, 0);
+  margin: 1.5rem 0;
+}
+
+hr {
+  width: 100px;
+  height: 5px
+}
+
+
+/******** HEADER ********/
+header {
+  margin: 0;
+}
+
+.logo {
+  width: 230px;
+}
+
+nav {
+  font-weight: bold;
+  margin: 0;
+}
+
+@media screen and (max-width: $mid-width-mob), screen and (orientation: portrait) {
+ .logo {
+    width: 220px;
+  } 
+}
+
+
+
+/******** FOOTER ********/
+footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: $secondary-color;
+}
+
+footer p {
+  color: $body-color;
+}
+
+footer ul,
+li {
+  margin: auto;
+  display: flex;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#f-logo{
+  width: 210px;
+  padding: 15px 0;
+}
+
+
+@media screen and (max-width: $mid-width-mob), screen and (orientation: portrait) {
+  #f-logo {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: $max-width-mob) {
+  #f-logo {
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
